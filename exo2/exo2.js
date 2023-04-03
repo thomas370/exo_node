@@ -70,27 +70,6 @@ students7.sort((a, b) => {
 });
 console.log(students7);
 
-//6
 
-/*
-Ajoutez dans le fichier students.txt les étudiants suivants :
 
-- 18 Sonia Paris
-
-- 17 Clarisse Marseille*/
-
-const fileData8 = fs.readFileSync('Notes.txt', 'utf8');
-const students8 = [];
-const lines8 = fileData8.split('\n');
-lines8.forEach(line => {
-    const [notes, name, address] = line.split(' ');
-    const student8 = { notes, name, address };
-    students8.push(student8);
-}
-);
-students8.sort((a, b) => {
-    return a.notes - b.notes;
-
-});
-console.log(students8);
 

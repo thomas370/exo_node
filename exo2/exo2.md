@@ -8,10 +8,3 @@
 
 4. Récupérez les données dans un objet student, puis ajoutez chaque étudiant dans un tableau students.
 5. Ordonnez maintenant l'ensemble des données dans le tableau.
-6. Ajoutez dans le fichier students.txt les étudiants suivants :
-
-- 18 Sonia Paris
-
-- 17 Clarisse Marseille
-
-7. Lire le fichier lui-même et mettez chaque nom en majuscule
