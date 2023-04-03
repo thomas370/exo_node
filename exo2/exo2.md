@@ -1,4 +1,4 @@
-1.(bis) Pour la suite utilisez l'approche synchrone afin de récupérer les données que vous pourrez exploiter par la suite dans le script.
+1. Lisez le fichier à l'aide de la méthode asynchrone.
 
 1.(bis) Pour la suite utilisez l'approche synchrone afin de récupérer les données que vous pourrez exploiter par la suite dans le script.
 
