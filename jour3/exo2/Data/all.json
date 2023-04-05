@@ -1,0 +1,81 @@
+{
+    "students": [
+        {
+            "name": "Alan",
+            "notes": [
+                11,
+                18,
+                19,
+                11
+            ],
+            "address": "Paris",
+            "mention": null
+        },
+        {
+            "name": "Alice",
+            "notes": [
+                10,
+                17,
+                11,
+                10
+            ],
+            "address": "Paris",
+            "mention": null
+        },
+        {
+            "name": "Sophie",
+            "notes": [
+                20,
+                15,
+                12,
+                9
+            ],
+            "address": "Paris",
+            "mention": null
+        },
+        {
+            "name": "Sonia",
+            "notes": [
+                14,
+                15,
+                19,
+                17
+            ],
+            "address": "Toulon",
+            "mention": null
+        },
+        {
+            "name": "Antoine",
+            "notes": [
+                14,
+                15,
+                19,
+                17
+            ],
+            "address": "Aubenas",
+            "mention": null
+        },
+        {
+            "name": "Bernard",
+            "notes": [
+                9,
+                8,
+                19,
+                11
+            ],
+            "address": "Paris",
+            "mention": null
+        },
+        {
+            "name": "Clarisse",
+            "notes": [
+                13,
+                15,
+                12,
+                11
+            ],
+            "address": "Marseille",
+            "mention": null
+        }
+    ]
+}
