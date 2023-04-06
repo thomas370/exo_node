@@ -2,13 +2,13 @@ const readline = require("readline");
 
 const students = ["Alan", "Sonia", "Sophie"];
 
-function normalizer (str) {
-    return str.toLowerCase().replace(/\s/g, "");
+function normalizer (str) { // On normalise la chaîne de caractères
+    return str.toLowerCase().replace(/\s/g, ""); // On enlève les espaces
 }
 
 const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
+    input: process.stdin, // process.stdin est un flux en lecture
+    output: process.stdout // process.stdout est un flux en écriture
 });
 
 rl.question("Entrez le nom d'un étudiant : ", (userInput) => {

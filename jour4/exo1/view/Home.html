@@ -1,10 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <title>Ajoutez un utilisateur</title>
+    <link href="/jour4/exo1/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 </head>
-<body>
 
+<body>
+<div class="container">
+        <div class="row">
+            <div class="col-8">
+                <form action="/" method="POST">
+                    <div class="form-group">
+                        <label>Name
+                            <input class="form-control" name="name" type="text" />
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Ajouter</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-4">
+            <p class="text-primary">
+                <a type="submit" class="btn" href="/users">users</a>
+            </p>
+        </div>
+    </div>
 </body>
+
 </html>
