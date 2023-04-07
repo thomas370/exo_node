@@ -1,0 +1,7 @@
+const User = require('./user');
+
+<% if (user.isAdmin) { %>
+    <h1>Access granted</h1>
+<% } else { %>
+    <h1>You must be logged as an administrator!</h1>
+<% } %>
