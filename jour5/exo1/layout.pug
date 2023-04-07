@@ -1,0 +1,27 @@
+doctype html
+html(lang='fr')
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        title Document
+    body
+        include layout/manu.pug
+
+        main
+            .container
+                h1 Jean DUPONT
+                p Bienvenue sur mon portfolio
+                p Contactez-moi à l'adresse email suivante :
+                output#generate-email
+        block content
+
+        include layout/footer.pug
+
+        script.
+            // Ce script est uniquement sur cette page
+            (function preventSpam() {
+                const b64encodedEmail = 'amVhbi5kdXBvbnRAZ21haWwuY29t';
+                document.getElementById('generate-email').textContent = atob(b64encodedEmail);
+            })();
+
