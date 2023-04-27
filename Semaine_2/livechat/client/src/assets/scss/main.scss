@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  min-height: 100vh;
+}
+
+.chat-container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  text-align: center;
+  input {
+    font-family: 'Poppins', sans-serif;
+    width: 200px;
+    display: block;
+    margin: 0 auto 20px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    outline: none;
+    border: 2px solid;
+    &:first-child {
+      border-color: #1566cb;
+      transition: all .3s;
+      &:focus {
+        border-color: #579fff;
+      }
+    }
+    &:nth-child(2) {
+      border-color: #21900c;
+      transition: all .3s;
+      &:focus {
+        border-color: #30c111;
+      }
+    }
+  }
+  button {
+    font-size: 16px;
+    padding: 10px;
+    width:200px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-weight: 700;
+    background-color: #26a54e;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover {
+      background-color: #1f8a41;
+    }
+  }
+}
+
+.livechat {
+  width: 100%;
+  p {
+    font-size: 18px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin-bottom: 0;
+  };
+  .chat-body {
+    width: 100%;
+    height: 600px;
+    border: 2px solid #333;
+    overflow: scroll;
+    &.message-container {
+      padding: 0;
+      border: none;
+    }
+  }
+  .chat-footer {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    input {
+      width: 85%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 0;
+      border-bottom-left-radius: 6px !important;
+      border: 2px solid #333;
+      &:focus {
+        outline: none;
+        border-color: #333;
+      }
+    }
+    button {
+      width: 15%;
+      padding: 10px;
+      margin: 0;
+      border: 2px solid #1c81df;
+      background-color: #1c81df;
+      border-radius: 0;
+      border-bottom-right-radius: 6px !important;
+      cursor: pointer;
+      transition: all .3s;
+      &:hover {
+        background-color: #2495fb;
+      }
+      i {
+        font-size: 18px;
+        color: #fff;
+      }
+      &[disabled] {
+        background-color: #ccc;
+        border-color: #ccc;
+        cursor: unset;
+        &:hover {
+          background-color: #ccc;
+        }
+      }
+    }
+  }
+}
+
+.message {
+  padding: 10px 15px 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  span {
+    font-size: 18px;
+    color: #fff;
+    background-color: #26a54e;
+    display: inline-block;
+    border-radius: 6px;
+    padding: 5px 12px ;
+  }
+  .meta {
+    display: block;
+    background: none;
+    color: #333;
+    margin: 0 0 10px;
+    font-size: 14px;
+  }
+}
+
+#other {
+  align-items: flex-start;
+}
+
+#you{
+  align-items: flex-end;
+  span {
+    background-color: #1c81df;
+  }
+  .meta {
+    background: none;
+    padding-right: 0;
+  }
+}
+
+
+// Loader
+
+.text-loader {
+  color: #1c81df;
+}
+.loader {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 20px;
+  position: relative;
+  background: #FFF;
+  box-shadow: -12px 0 #FFF, 12px 0 #FFF;
+  box-sizing: border-box;
+  animation: shadowPulse 1.5s linear infinite;
+}
+
+@keyframes shadowPulse {
+  33% {
+    background: #FFF;
+    box-shadow: -12px 0 #3a95d8, 12px 0 #FFF;
+  }
+  66% {
+    background: #3a95d8;
+    box-shadow: -12px 0 #FFF, 12px 0 #FFF;
+  }
+  100% {
+    background: #FFF;
+    box-shadow: -12px 0 #FFF, 12px 0 #3a95d8;
+  }
+}
+
+.sidebar {
+  position: absolute;
+  padding: 30px 0 30px 30px;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  h3 {
+    color: #fff;
+    font-size: 18px;
+    background-color: #333;
+    padding: 10px 20px;
+    margin: 0;
+    border-top-left-radius: 6px;
+  }
+  &-list {
+    border: 1px solid #333;
+    padding: 30px 20px;
+    ul {
+      list-style: none;
+      padding: 0;
+      display: inline-block;
+      li {
+        font-size: 16px;
+        font-weight: 700;
+      }
+    }
+  }
+}
